@@ -1,0 +1,51 @@
+.section {
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--accent);
+    padding: 3rem var(--container-padding);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heading {
+    margin: 0 auto;
+}
+
+.text {
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.563rem;
+    line-height: 1.875rem;
+
+    text-align: center;
+
+    color: var(--bg);
+    margin-bottom: 55px;
+}
+
+.text hr {
+    margin: 0;
+    border: none;
+}
+
+.cards {
+    height: 235px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.wave {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    bottom: 1px;
+
+}

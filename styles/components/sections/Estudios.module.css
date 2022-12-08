@@ -1,0 +1,62 @@
+.section {
+    height: 100vh;
+    padding: 2rem var(--container-padding);
+    margin-top: 5rem;
+    
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.box {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.list li {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+    list-style: none;
+    color: var(--grey);
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--grey);
+    top: 1.1rem;
+    left: -1.4rem;
+    border-radius: 3px;
+    transition: all .3s;
+
+}
+
+.list li:hover {
+    
+    color: var(--accent);
+    transition: all .3s;
+}
+
+.active {
+    
+    color: var(--accent) !important;
+    transition: all .3s;
+}
+
+.active::before {
+    
+    background-color: var(--accent) !important;
+}

@@ -1,0 +1,10 @@
+.section {
+    padding: 6rem var(--container-padding);
+    
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}

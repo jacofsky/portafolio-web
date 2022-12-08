@@ -1,0 +1,27 @@
+.text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    display: inline;
+    position: relative;
+    z-index: 100;
+
+}
+
+.backText {
+    position: absolute;
+    top: 3px;
+    left: -3px;
+
+    color: var(--bg);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.textBox {
+    position: relative;
+
+}

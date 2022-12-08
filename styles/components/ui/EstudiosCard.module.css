@@ -1,0 +1,100 @@
+.container {
+    background: var(--bg);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    height: 60vh;
+    width: 100%;
+    padding: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+}
+
+.headerText {
+    
+}
+
+.title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+
+    color: var(--black);
+
+}
+
+.years {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    margin: 0;
+    
+    color: var(--grey);
+}
+
+.aprendizajes {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+    margin: 10px 0;
+    
+    
+    color: var(--black);
+}
+
+.text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* or 138% */
+    
+    
+    color: var(--black);
+}
+
+.certificadosBox {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.certTitles {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+    margin: 0;
+    
+    
+    color: var(--black);
+}
+
+.certText {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0;
+    
+    
+    color: var(--accent);
+}
