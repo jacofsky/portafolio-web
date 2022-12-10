@@ -34,7 +34,6 @@ export const ProyectoCard = ({title, text, github, tecnologias, photo, web, l = 
             
           </div>
           <div className={styles.tecBox}>
-            <p className={styles.tecText}>Tecnologias:</p>
             <div>
               {
                 tecnologias.map((icon) => <Icon className={styles.icon} width={50} icon={icon}/>)

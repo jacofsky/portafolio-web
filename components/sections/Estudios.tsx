@@ -10,7 +10,7 @@ export const Estudios = () => {
   const [estudio, setEstudio] = useState<estudios>('coderhouse')
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="estudios">
       <div className={styles.heading}>
         <Heading text='Estudios' fontSize={4.188} h={2}/>
       </div>

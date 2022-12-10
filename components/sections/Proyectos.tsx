@@ -3,7 +3,7 @@ import styles from '../../styles/components/sections/Proyectos.module.css'
 
 export const Proyectos = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="proyectos">
         <div className={styles.heading}>
             <Heading text="Proyectos" h={2} fontSize={3.75}/>
         </div>

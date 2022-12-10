@@ -4,9 +4,12 @@ import { Button, Heading } from "../ui";
 
 export const Home = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="home">
       <div>
-        <Heading text="Fullstack Developer" fontSize={4.188} />
+        <div className={styles.heading}>
+          <Heading text="Fullstack Developer" fontSize={4.188} />
+        </div>
+
         <p className={styles.text}>
           Hola 👋, Soy <span>Valentin Jacofsky</span>
           <hr/>y puedo crear <span>aplicaciones geniales!</span>

@@ -32,3 +32,23 @@
     margin: 0;
     border: none;
 }
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .box div h3 {
+        font-size: 3rem !important;
+    }
+
+    .box div span {
+        font-size: 3rem !important;
+    }
+
+    .box button {
+        width: 100%;
+    }
+}

@@ -47,5 +47,18 @@
     width: 100%;
     z-index: -1;
     bottom: 1px;
+    height: auto;
+}
 
+@media (max-width: 1224px) {
+    .cards {
+        flex-direction: column;
+        gap: 3vw;
+        height: fit-content;
+    }
+
+    .section {
+        height: fit-content;
+    }
+    
 }

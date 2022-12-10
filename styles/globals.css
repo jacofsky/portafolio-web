@@ -10,13 +10,41 @@
 
 }
 
+::selection {
+  background-color:var(--accent-dark);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--accent);
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --container-padding: 2rem;
+  }
+}
+
 html,
 body {
   padding: 0rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth !important;
+  
+    
 }
+
 
 a {
   color: inherit;
@@ -55,6 +83,8 @@ a {
  html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  
+
 }
 
 /* Sections

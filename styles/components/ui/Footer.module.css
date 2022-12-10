@@ -48,3 +48,8 @@
     color: var(--accent-dark);
     background-color: var(--bg);
 }
+
+.text::selection {
+    background-color:var(--accent);
+}
+  

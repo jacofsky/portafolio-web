@@ -45,7 +45,9 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: fit-content;
 }
+
 
 .link {
     font-family: 'Lato';
@@ -53,11 +55,15 @@
     font-weight: 700;
     font-size: 1.563rem;
     line-height: 0.938rem;
-
-
+    position: relative;
     color: var(--accent);
-
+    transition: all .5s;
 }
+
+.link:hover {
+    text-decoration: underline;
+}
+
 
 .tecBox {
     display: flex;
@@ -75,4 +81,47 @@
     font-size: 1.875rem;
     line-height: 2.25rem;
     color: var(--dark);
+}
+
+@media (max-width: 1224px) {
+
+    .title {
+        text-align: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .links {
+        width: auto;
+    }
+
+    .link {
+        margin: 0 auto;
+    }
+
+    .tecBox {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tecBox div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+   .cardImage a img {
+        width: 80vw;
+        height: auto;
+
+   }
 }

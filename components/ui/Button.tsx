@@ -7,16 +7,24 @@ interface IProps {
   width?: number,
   heigt?: number,
   fontSize?: number,
-
+  bg?: 'green' | 'white'
 
 }
 
-export const Button = ({text, action, type = 'button'}:IProps) => {
+export const Button = ({text, action, type = 'button', bg = 'white'}:IProps) => {
 
-
-  return (
-    <button className={styles.buttonStyle} onClick={action} type={type}>
-      {text}
-    </button>
-  )
+  if(bg === 'white') {
+    return (
+      <button className={styles.buttonStyle} onClick={action} type={type}>
+        {text}
+      </button>
+    )
+  } else {
+    return (
+      <button className={styles.buttonStyleG} onClick={action} type={type}>
+        {text}
+      </button>
+    )
+  }
+  
 }

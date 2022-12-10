@@ -19,7 +19,7 @@
 
 
 .buttonStyle::before {
-    content: "Mas proyectos";
+    content: "";
     color: transparent;
     border: 2px solid var(--black);
     
@@ -47,5 +47,59 @@
 }
 
 .buttonStyle:active:before {
+    transform: translate3d(-0,0rem,-1rem);
+}
+
+/* -------------------------- */
+
+.buttonStyleG {
+    width: 19.813rem;
+    height: 4.433rem;
+    position: relative;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    background: var(--bg);
+    cursor: pointer;
+    font-family: 'Lato';
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 2.688rem;
+
+    transform-style: preserve-3d;
+
+    transition: .3s all;
+}
+
+
+.buttonStyleG::before {
+    content: "";
+    color: transparent;
+    border: 2px solid var(--black);
+    
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translate3d(-0.6rem,0.5rem,-1rem);
+    transition: .3s all;
+
+}
+
+.buttonStyleG:hover::before {
+
+    background-color: var(--bg);
+}
+
+
+.buttonStyleG:active {
+
+    transform: translate(-0.6rem, 0.5rem);
+    
+}
+
+.buttonStyleG:active:before {
     transform: translate3d(-0,0rem,-1rem);
 }

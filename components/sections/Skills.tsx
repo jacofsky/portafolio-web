@@ -5,7 +5,7 @@ import Wave from '../../public/images/wave.svg'
 
 export const Skills = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="skills">
         <div className={styles.container}>
             <div className={styles.heading}>
                 <Heading text='Skills' fontSize={4.188} h={2} type="white"/>

@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../../public/images/logo.svg'
@@ -9,12 +10,14 @@ export const Navbar = () => {
         
         <Image src={Logo} alt="Logo"/>
 
+        <Icon className={styles.hamburgerMenu} icon="mingcute:menu-fill" color='var(--accent)'/>
+
         <ul className={styles.navItems}>
-            <li><Link href='#1'>Inicio</Link></li>
-            <li><Link href='#2'>Skills</Link></li>
-            <li><Link href='#3'>Proyectos</Link></li>
-            <li><Link href='#4'>Estudios</Link></li>
-            <li><Link href='#1'>Contacto</Link></li>
+            <li><Link href='/#home'>Inicio</Link></li>
+            <li><Link href='/#skills'>Skills</Link></li>
+            <li><Link href='/#proyectos'>Proyectos</Link></li>
+            <li><Link href='/#estudios'>Estudios</Link></li>
+            <li><Link href='/contacto'>Contacto</Link></li>
         </ul>
     </nav>
   )

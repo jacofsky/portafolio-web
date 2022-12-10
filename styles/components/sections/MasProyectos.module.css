@@ -21,3 +21,29 @@
     margin: 0;
     border: none;
 }
+
+@media (max-width: 768px) {
+    .section div h3 {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .section div span {
+        text-align: center;
+        width: 100%;
+        top: 52%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 425px) {
+    .section div h3 {
+        font-size: 2rem !important;
+    }
+
+    .section div span {
+        font-size: 2rem !important;
+    }
+}
