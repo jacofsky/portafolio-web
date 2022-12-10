@@ -1,8 +1,12 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import styles from "../../styles/components/sections/Home.module.css";
 import { Button, Heading } from "../ui";
 
 export const Home = () => {
+
+  const router = useRouter()
+
   return (
     <section className={styles.container} id="home">
       <div>
@@ -16,7 +20,7 @@ export const Home = () => {
         </p>
 
         <div className={styles.boxButton}>
-          <Button text="Contacto" action={() => console.log("Contacto")} />
+          <Button text="Contacto" action={() => router.push('/contacto')} />
           <p className={styles.secondaryText}>Hagamos tus <hr/> ideas realidad!</p>
         </div>
 
