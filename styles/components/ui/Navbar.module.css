@@ -71,13 +71,66 @@
 
 @media (max-width: 768px) {
     .nav {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: flex-start;
-        display: none;
+        
+
     }
+
+
+    @keyframes gap {
+        from {
+            gap: 0px;
+        }
+        to {
+            gap: 50px;
+        }
+    }
+
     .navItems {
         position: relative;
+        width: 0;
+        height: 0;
+        margin: 0;
+      
+    }
+
+    .navItemsOpen {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 50px;
         flex-direction: column;
-        
+        width: 100vw;
+        animation: gap 1s;
+        height: fit-content;
+    }
+
+    .navItemsOpen li {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 37px;
+        position: relative;
+        list-style-type: none;
+        color: var(--black);
+        transition: all .5s;
+    }
+
+    .navItems li {
+        height: 0;
+        font-size: 0;
+        transition: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
 }

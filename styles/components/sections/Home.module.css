@@ -77,18 +77,18 @@
     .img {
         margin: 1rem 0;
     }
-    
+
+    .heading div h1 {
+        display: block;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
     
     
 }
 
 @media (max-width: 658px) {
-    
-    
-    .heading div h1 {
-        display: block;
-        text-align: center;
-    }
 
     .heading div span {
         text-align: center;
@@ -96,14 +96,10 @@
         left: 49%;
         transform: translate(-50%, -50%);
     }
-
-    
-    
-    
+   
 }
 
 @media (max-width: 530px) {
-    
     
     .img {
         width: 90vw;

@@ -1,5 +1,5 @@
 TO DO:
-[❌] Navbar resposive
+[✅] Navbar resposive
 [❌] Buttons funcionales
 [❌] Contacto funcional
 [✅] Brand link
