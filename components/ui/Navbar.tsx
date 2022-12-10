@@ -1,13 +1,25 @@
 import { Icon } from '@iconify/react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useWindowSize } from '../../hooks/useWindowSize'
 import Logo from '../../public/images/logo.svg'
 import styles from '../../styles/components/ui/Navbar.module.css'
 
 export const Navbar = () => {
 
-  const [openNav, setOpenNav] = useState(false)
+  const [openNav, setOpenNav] = useState(true)
+
+  const { width } = useWindowSize()
+
+  useEffect(() => {
+
+    if (width < 768) {
+      setOpenNav(true)
+    }
+    
+  }, [width])
+  
 
   return (
     <nav className={styles.nav}>

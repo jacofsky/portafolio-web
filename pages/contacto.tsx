@@ -1,8 +1,16 @@
+import Link from 'next/link'
 import { Layout } from '../components/layouts'
 import { Button, Heading } from '../components/ui'
 import styles from '../styles/pages/contacto.module.css'
 
+
 const ContactoPage = () => {
+
+  const handleSendEmail = () => {
+    console.log("Send email");
+    
+  }
+
   return (
     <Layout title='Contacto - Valentin Jacofsky'>
         <section className={styles.section}>
@@ -12,7 +20,9 @@ const ContactoPage = () => {
                   Complete el <span>formulario</span> <hr/>
                   o agende una <span>reunión en meet!</span>
                 </p>
-                <Button text='Agendar meet' action={() => console.log('Agendar meet')}/>
+                <Link href='https://calendly.com/vjacofsky/30min' target='_blank'>
+                  <Button text='Agendar meet' action={() => {}}/>
+                </Link>
             </div>
 
             <form className={styles.form}>
@@ -31,9 +41,10 @@ const ContactoPage = () => {
               </div>
 
               <div className={styles.button}>
-                <Button text='Enviar mensaje' action={() => console.log('Enviar mensaje')}/>
+                <Button text='Enviar mensaje' action={handleSendEmail}/>
               </div>
             </form>
+
         </section>
     </Layout>
   )

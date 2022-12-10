@@ -83,6 +83,16 @@
     color: var(--dark);
 }
 
+.cardImage a img {
+    transition: all .5s;
+
+}
+
+.cardImage a img:hover {
+    opacity: .7;
+
+}
+
 @media (max-width: 1224px) {
 
     .title {

@@ -18,7 +18,7 @@ export const ProyectoCard = ({title, text, github, tecnologias, photo, web, l = 
     <article className={styles.card}>
         {
           l && <div className={styles.cardImage}>
-          <Link href={web}>
+          <Link href={web} target="_blank">
             <Image src={photo} alt={`Image de portada del proyecto: ${title}`} width={707} height={397}/>
           </Link>
         </div>
@@ -28,8 +28,8 @@ export const ProyectoCard = ({title, text, github, tecnologias, photo, web, l = 
             <h3 className={styles.title}>{title}</h3>
             <p className={styles.text}>{text}</p>
             <div className={styles.links}>
-              <Link className={styles.link} href={web}>Más información</Link>
-              { github && <Link className={styles.link} href={github}>Código</Link> }
+              <Link target="_blank" className={styles.link} href={web}>Más información</Link>
+              { github && <Link target="_blank" className={styles.link} href={github}>Código</Link> }
             </div>
             
           </div>
@@ -46,7 +46,7 @@ export const ProyectoCard = ({title, text, github, tecnologias, photo, web, l = 
 
         {
           !l && <div className={styles.cardImage}>
-          <Link href={web}>
+          <Link href={web} target="_blank">
             <Image src={photo} alt={`Image de portada del proyecto: ${title}`} width={707} height={397}/>
           </Link>
         </div>
