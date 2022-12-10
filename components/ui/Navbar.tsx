@@ -7,8 +7,9 @@ import styles from '../../styles/components/ui/Navbar.module.css'
 export const Navbar = () => {
   return (
     <nav className={styles.nav}>
-        
-        <Image src={Logo} alt="Logo"/>
+        <Link href="/#home">
+          <Image src={Logo} alt="Logo"/>
+        </Link>
 
         <Icon className={styles.hamburgerMenu} icon="mingcute:menu-fill" color='var(--accent)'/>
 
