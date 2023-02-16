@@ -1,15 +1,36 @@
+import { useFormik } from 'formik'
 import Link from 'next/link'
 import { Layout } from '../components/layouts'
 import { Button, Heading } from '../components/ui'
 import styles from '../styles/pages/contacto.module.css'
+import * as Yup from 'yup';
 
+interface IFormik {
+  name: string, 
+  email: string,
+  mensaje: string
+}
+
+const mensajeSchema = Yup.object().shape({
+  
+})
 
 const ContactoPage = () => {
 
-  const handleSendEmail = () => {
-    console.log("Send email");
-    
-  }
+  
+  const {values, errors, handleSubmit} = useFormik<IFormik>({
+    initialValues: {
+      name: '',
+      email: '',
+      mensaje: ''
+    },
+    validationSchema: mensajeSchema,
+    onSubmit: ({name, email, mensaje}) => {
+      if (name.length < 0) {
+        
+      }
+    }
+  })
 
   return (
     <Layout title='Contacto - Valentin Jacofsky'>
